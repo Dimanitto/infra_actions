@@ -77,7 +77,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           # Выполняет pull образа с DockerHub
-          sudo docker pull dimanitto/infra_actions
+          sudo docker pull ${{ secrets.USER }}/infra_actions
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 dimanitto/infra_actions
