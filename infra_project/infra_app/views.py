@@ -2,7 +2,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('У меня получилось!')
+    return HttpResponse('<img src="https://warfiles.ru/uploads/posts/2018-03/1521565606_1468661375_1.jpg" height="300px" />')
 
 
 def second_page(request):
